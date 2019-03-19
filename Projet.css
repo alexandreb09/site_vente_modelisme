@@ -1,0 +1,241 @@
+.ma_police,#bloc_famille,#bloc_items,#authentification,#panier, #pied_de_page{
+	text-align:center;
+}
+
+hr{
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 1px;
+	border-color:white;
+	background-color: white;
+	color:white;
+}
+
+.ma_police{
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-size:25;
+}
+
+.titre{
+	height:175px;
+	width:70%;
+	background-color:#EAE5DF;
+	float:left;
+}
+
+.image_famille {
+	width:75%;
+	height:75%;
+	margin:10px;
+	margin-bottom:3px; 
+	margin:5%;
+}
+
+.image_items {
+	width:100px;
+	height:120px;
+	margin:10px;
+	float:left;
+}
+
+.detail{
+	color:grey;
+}
+.white{
+	color:white;
+	font-style:bold;
+}
+
+
+#detail_panier{
+	color: #797a7a;
+	font-size: 22px;
+	text-align: left;
+	padding:5px; 
+}
+
+#prix_panier{
+	font-size: 22px;
+	text-align: right;
+	margin-bottom: 8px;
+	padding-right: 5px;
+}
+
+
+#prix{
+	color:#780000;
+	font-size:20;
+}
+
+
+
+#bloc_famille{
+	background-color:rgb(224, 220, 203);
+	width: 200px;
+	height: 200px;
+	border-width: 3px;
+	border: 1px solid rgb(238, 187, 20); 
+	display: inline-block; 
+	margin:5px;
+}
+
+#bloc_items{
+	background-color:rgb(224, 220, 203);
+	width: 310px;
+	height: 150px;
+	border-width: 3px;
+	border: 1px solid rgb(238, 187, 20); 
+	display: inline-block; 
+	margin:5px;
+}
+
+
+#authentification{
+	height:175px;
+	width:30%;	
+	float:left;
+	background-color:#8A5D1D;	
+	color: white;
+}
+
+#contenu{
+	height:500px;
+	width:70%;
+	background-color:#EAE5DF;
+	clear:both;
+	float:left;
+	overflow: auto;
+}
+
+#panier{
+	height:500px;
+	width:30%;
+	float:left;
+	background-color:#861825;
+	color:white;
+	font-size: 150%;
+	overflow: auto;
+}
+
+#pied_de_page{
+	height:50px;
+	width:100%;
+	clear:both;
+	background-color:#8A5D1D;
+	color:white;
+}
+
+#logo{
+	width:30%;
+	clear:both;
+}
+
+#logo_panier{
+	margin-top: 8px;
+	width:22px;
+}
+
+#description_titre{
+	float:right;
+	width:65%;
+	margin-left: 5%;
+}
+
+
+/* largeur > 960 : ajout fond gris */
+@media screen and (min-width: 960px){
+	body{
+		background-color:#555;
+		margin: 0;
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+}
+
+/* largeur < 960px : adapte largeur page */
+@media screen and (min-width: 580px) and (max-width: 960px) {
+	body{
+		padding:0px;
+		margin:0px;
+	}
+	#page{
+		width:auto;
+	}
+	
+}
+
+@media screen and (max-width: 580px){
+	body{
+		margin:0px;
+		padding:0px;
+	}
+	.titre{
+		display:none;
+	}
+	#authentification{
+		float:top;
+		clear:both;
+		width: 100%;
+		height:20%;
+	}
+
+	#contenu{
+		width:100%;
+		height: 60%;
+	}
+	#panier{
+		clear:both;
+		width:100%;
+		height:20%;
+	}
+
+	#pied_de_page{
+		display:none;
+	}
+}
+
+.bouton {
+	font-family:'Eras';
+	margin:5px 10px 5px 10px;
+	-moz-box-shadow: 0px 10px 9px -7px #404242;
+	-webkit-box-shadow: 0px 10px 9px -7px #404242;
+	box-shadow: 0px 10px 9px -7px #404242;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5e7e), color-stop(1, #780000));
+	background:-moz-linear-gradient(top, #ff5e7e 5%, #780000 100%);
+	background:-webkit-linear-gradient(top, #ff5e7e 5%, #780000 100%);
+	background:-o-linear-gradient(top, #ff5e7e 5%, #780000 100%);
+	background:-ms-linear-gradient(top, #ff5e7e 5%, #780000 100%);
+	background:linear-gradient(to bottom, #ff5e7e 5%, #780000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5e7e', endColorstr='#780000',GradientType=0);
+	background-color:#ff5e7e;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
+	border-radius:40px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d484d;
+}
+
+.bouton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #780000), color-stop(1, #ff5e7e));
+	background:-moz-linear-gradient(top, #780000 5%, #ff5e7e 100%);
+	background:-webkit-linear-gradient(top, #780000 5%, #ff5e7e 100%);
+	background:-o-linear-gradient(top, #780000 5%, #ff5e7e 100%);
+	background:-ms-linear-gradient(top, #780000 5%, #ff5e7e 100%);
+	background:linear-gradient(to bottom, #780000 5%, #ff5e7e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#780000', endColorstr='#ff5e7e',GradientType=0);
+	background-color:#780000;
+}
+
+.bouton:active {
+	position:relative;
+	top:1px;
+}
