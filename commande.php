@@ -147,7 +147,7 @@
     }
 	
 	function exporter() {
-        require('fpdf/fpdf.php');
+        require('lib/fpdf/fpdf.php');
 
 		class PDF extends FPDF{
 			function Header(){
@@ -186,8 +186,8 @@
                     $this->Cell($w[0],6,$no,'LR',0,'L',$fill);
                     $this->Cell($w[1],6,$row['id_article'],'LR',0,'L',$fill);                               //LR:  border line left et right
                     $this->Cell($w[2],6,$row['libelle'],'LR',0,'C',$fill);
-                    $this->Cell($w[3],6,number_format($row['quantite'],0,',',' '),'LR',0,'R',$fill);
-                    $this->Cell($w[4],6,number_format($row['prix_ttc'],0,',',' '),'LR',0,'R',$fill);
+                    $this->Cell($w[3],6,number_format($row['quantite'],2,',',' '),'LR',0,'R',$fill);
+                    $this->Cell($w[4],6,number_format($row['prix_ttc'],2,',',' '),'LR',0,'R',$fill);
                     $this->Ln();																			//saut la ligne
                     $fill = !$fill;
                     $prix_total_produit = $row["quantite"] * $row["prix_ttc"];                              // Calcul prix total par produit
