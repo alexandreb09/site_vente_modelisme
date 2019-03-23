@@ -52,24 +52,18 @@
 			</p>
 			
 			<form method="post">
-				<input class="bouton" type="submit" name="viderPanier" value="vider panier" />
-				<input class="bouton" type="button" value="commander">
+				<button class="bouton" type="submit" name="viderPanier">Vider panier </button>
+				<input class="bouton" type="button" value="Commander">
 			</form>
-			
-
+						
+			<a href="Index.php?action=exporter" target="_blank"> 
+				<button class="bouton" >Exporter PDF </button>
+			</a>
 
 		</div>
 		<div id="pied_de_page"> 
 			TOPModelisme.com est enregistré au R.C.S sous le numéro 1234567890 <br/>
 			13 avenue du Pré la Reine - 75007 Paris 
 		</div>
-
-
-		<script>
-			function effacerDivPanier(){
-				document.getElementById("panier_contenu").innerHTML = "";
-			}
-		</script>
-
 	</body>
 </html>
